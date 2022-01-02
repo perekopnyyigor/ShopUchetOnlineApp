@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить товар"
+        android:background="#e0e0e0"
+
+        android:textSize="26sp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Наименование"/>
+    <EditText
+        android:id="@+id/price1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена закупа"/>
+    <EditText
+        android:id="@+id/price2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена продажи"/>
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Код товара"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Категория"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        android:onClick="addProduct"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/Photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnVideo">
+    </ImageView>
+
+</LinearLayout>
